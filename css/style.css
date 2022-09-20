@@ -399,3 +399,145 @@ footer a {
     color: var(--purple);
     text-decoration: underline;
 }
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    #card-blocs {
+        flex-flow: row wrap;
+        text-align: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 3rem 2rem;
+    }
+    
+    .cards {
+        width: calc((100% / 3) - 15px);
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+    }
+    
+    .first-card {
+        align-items: flex-start;
+        width: calc(((100% / 3) * 2) - 7.5px);
+        padding-bottom: 0;
+    }
+    
+    .first-card img {
+        width: 65%;
+    }
+
+    .pln-bloc-1 h2 {
+        font-size: 4rem;
+    }
+
+    .t-rvw-box {
+        flex-direction: row !important;
+    }
+
+    .review {
+    flex-basis: 65%;
+    text-align: left;
+    }
+
+    .f-box {
+        flex-flow: row wrap;
+    }
+
+    .b-cards {
+        width: calc((100% / 2) - 1rem);
+    }
+
+    #about-us {
+        flex-direction: row;
+        gap: 6rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .about-bloc h2 {
+        font-size: 4rem;
+    }
+
+    footer .container {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 980px;
+    }
+
+    .first-card {
+        flex-direction: row;
+    }
+
+    .first-card div {
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+
+    .first-card img {
+        align-self: end;
+        width: 40%;
+    }
+
+    .plan-blocs {
+        flex-direction: row;
+        gap: 3rem;
+        align-items: flex-end;
+    }
+
+    .pln-bloc-1 {
+        flex-basis: 60%;
+    }
+
+    .pln-bloc-2 {
+        flex-basis: 40%;
+        gap: 1rem;
+    }
+
+    .pln-bloc-1 img {
+        width: 70%;
+    }
+
+    .pln-bloc-2 img {
+        width: 70%;
+    }
+
+    .pln-bloc-1 h2 {
+        font-size: 2rem;
+    }
+
+    .f-box {
+        gap: 1rem;
+    }
+
+    .b-cards {
+        gap: 1rem;
+        width: calc((100% / 3) - 1rem);
+    }
+
+    #about-us {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .g-box {
+        padding-right: 20rem;
+        padding-left: 20rem;
+    }
+
+    footer .container {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
